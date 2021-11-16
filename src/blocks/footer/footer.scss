@@ -114,9 +114,13 @@
 	.footer__number{letter-spacing: .2px;}
 	.footer__link{height: 20px;}
 }
-@media (min-width: $desktop) {
+@media (min-width: $desktop)
+{
 	.footer__copyright .footer__logo{margin: 0 12px 0 13px;}
 	.footer__contact{margin-bottom: 36px;}
 	.footer__feedback span{margin-bottom: 11px;}
+}
+@media (min-width: $widescreen)
+{
 	.footer .container{justify-content: flex-start; gap:128px;}
 }
