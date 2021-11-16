@@ -27,28 +27,37 @@ address
 
 h1
 {
-	font-size: 42px;
-	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 10px;
-	line-height: 24px;
+	font-size: 38px;
+	line-height: 42px;
 }
 
 h2
 {
-	font-size: 22px;
-	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 10px;
-	line-height: 24px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+
 }
+
 
 h3
 {
-	font-size: 16px;
-	font-weight: 400;
 	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
 }
+
 
 h4
 {
@@ -61,7 +70,10 @@ h4
 p
 {
 	margin-top: 10px;
-	color: $secondary-color;
+	color: $mainFontColor;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 b
@@ -77,4 +89,32 @@ a:focus
 {
 	outline: 0;
 	text-decoration: none;
+}
+@media (min-width: $tablet)
+{
+	h1{font-size: 44px; line-height: 48px; }
+	h2
+	{
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 32px;
+	}
+
+}
+@media (min-width: $desktop)
+{
+	h1
+	{
+		font-size: 54px;
+		line-height: 64px;
+	}
+}
+@media (min-width: $widescreen)
+{
+	h1{font-size: 64px;}
+	h2
+	{
+		font-size: 32px;
+		line-height: 38px;
+	}
 }
