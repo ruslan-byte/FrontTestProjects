@@ -1,0 +1,7 @@
+<form class="search">
+	<input class="search__field" type="text" placeholder="Поиск" oninput="o2.search.onChange(this)">
+	<button class="search__button"type="submit">{% include "/assets/svg/loupe.svg" %}</button>
+	<button class="search__button search__button--right" type="button" onclick="o2.search.clearSearchField(this)">
+		{% include "/assets/svg/cross.svg" %}
+	</button>
+</form>

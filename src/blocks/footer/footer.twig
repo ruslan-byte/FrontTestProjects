@@ -1,8 +1,52 @@
 {# index.twig #}
 
 {% block footer %}
-	<footer>
+	<footer class="footer">
 		<div class="container">
+			<div class="footer__section">
+				{% include "/blocks/search/search.twig" %}
+				<div class="footer__copyright footer__copyright--desktop">
+					<a href="/" class="foooter__logo" >
+						{% include "/assets/svg/logo-gray.svg" %}
+					</a>
+					<span>УК Управление паркингами</span>
+				</div>
+			</div>
+			<nav class="footer__nav">
+				<ul>
+					<li class="footer__link">
+						<a href="#">Новости</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">Объекты</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">О компании</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">Услуги</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__section">
+				<div class="footer__contact">
+					<span>Диспетчерская</span>
+					<a class="footer__number" href="tel:74957772543">+7 (495) 777-25-43 </a>
+				</div>
+				<div class="footer__feedback">
+					<span>Есть жалобы или предложения?</span>
+					<button class="g-button g-button--black">Оставить обращение</button>
+				</div>
+			</div>
+			<div class="footer__copyright footer__copyright--mobile">
+				<a href="/" class="foooter__logo" >
+					{% include "/assets/svg/logo-gray.svg" %}
+				</a>
+				<span>УК Управление паркингами</span>
+			</div>
 		</div>
 	</footer>
 {% endblock %}

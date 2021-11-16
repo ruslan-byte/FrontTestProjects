@@ -1,5 +1,5 @@
 /*  Переменные со шрифтами  */
-$accent-font: 'Roboto-mono', sans-serif;
+$accent-font: 'Graphik LCG';
 
 /*  Переменные с гарнитурами шрифтов  */
 $thin:					100;
@@ -11,7 +11,7 @@ $bold:					bold;
 /* Настройки оснвоно шрифта */
 $mainFontSize: 			13px;
 $mainLineHeight:		17px;
-$mainFontColor:			#000;
+$mainFontColor:			#222222;
 $mainFontWeight:		$regular;
 
 /* Основные цвета */
@@ -19,8 +19,7 @@ $accent-color:			#f4b600;
 $secondary-color: 		#6a7678;
 
 /* Разрешения */
-$mobile:				768px;
-$tablet:				769px;
+$tablet:				768px;
 $desktop:				1024px;
-$widescreen:			1220px;
+$widescreen:			1120px;
 $fullhd:				1408px;

@@ -1,0 +1,51 @@
+.g-button, input.g-button
+{
+	display: inline-block;
+
+	max-height: 48px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 23px;
+	padding-left: 23px;
+
+	border-radius: 4px;
+	cursor: pointer;
+	&--white
+	{
+		border:1px solid #DCDCE6;
+		color: #4D4D4D;
+		background: white;
+		&:hover{border: 1px solid #808080}
+		&:active{border: 1px solid #222222}
+		&[disabled]{
+			color: #CCCCCC;
+			border: 1px solid #EAEAEA;
+			background: transparent;
+		}
+	}
+	&--black
+	{
+		background:#525761;
+		width: 100%;
+		border: none;
+		color:white;
+		text-align: center;
+		&:hover{background: #3A3D44;}
+		&:active{background: #292B30}
+		&[disabled]{
+			color: #CCCCCC;
+			border: 1px solid #CCCCCC;
+			background: transparent;
+		}
+	}
+	&--small
+	{
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 12px;
+	}
+}
+@media (min-width: $widescreen)
+{
+	.g-button--small{padding-inline:38px;}
+}

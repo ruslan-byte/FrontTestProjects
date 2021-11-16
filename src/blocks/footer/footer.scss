@@ -1,0 +1,122 @@
+.footer
+{
+	background-color: #FCFCFC;
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+.footer__copyright--desktop{display: none;}
+.footer__nav
+{
+	margin-bottom: 48px;
+	ul{padding-left: 4px;}
+	li{margin-bottom: 16px;}
+	a
+	{
+		color: #4D4D4D;
+		font-weight: 300;
+		&:hover{color:#969BA5;}
+	}
+}
+.footer__number
+{
+	font-size: 24px;
+	line-height: 32px;
+	color:#4D4D4D;
+	&:hover{color:#969BA5;}
+}
+.footer__contact
+{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 18px;
+	margin-bottom: 48px;
+	span
+	{
+		display: block;
+		margin-bottom: 4px;
+	}
+}
+.footer__copyright
+{
+	font-size: 0;
+	span
+	{
+		display: inline-block;
+		color:#808080;
+		font-size: 14px;
+		font-weight: 300;
+		white-space: auto;
+		vertical-align: top;
+		max-width: 115px;
+		line-height: 18px;
+	}
+	svg
+	{
+		width: 40px;
+		height: 40px;
+	}
+	path{fill:#C4C4C4;}
+	.foooter__logo{margin-right: 12px;}
+}
+.footer__feedback
+{
+	margin-bottom: 50px;
+	span
+	{
+		display: inline-block;
+		margin-bottom: 19px;
+		font-smoothing: grayscale;
+		-webkit-font-smoothing: grayscale;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+@media (min-width: $tablet)
+{
+	.footer .container
+	{
+		display: flex;
+		justify-content: space-between;
+		gap: 25px;
+	}
+	.footer__copyright--mobile{display: none;}
+	.footer__copyright--desktop{display: block;}
+	.footer__nav
+	{
+		min-width: 160px;
+		margin-bottom: 0;
+		ul{padding: 0;}
+	}
+	.footer__feedback
+	{
+		margin: 0;
+		max-width: unset;
+		span
+		{
+			white-space: nowrap;
+			font-size: 14px;
+			font-weight: 300
+		}
+	}
+	.footer{padding-bottom: 23px; padding-top: 32px;}
+	.footer__nav{font-size: 15px; }
+
+	.footer__copyright .foooter__logo {
+		display: inline-block;
+		margin-right: 29px;
+	}
+	.footer__contact
+	{
+		margin-bottom: 69px;
+		white-space: auto;
+		span{display: block;}
+	}
+	.footer__section { max-width: 256px; }
+	.footer__number{letter-spacing: 0.2px;}
+	.footer__link{height: 20px;}
+}
+@media (min-width: $desktop) {
+	.footer__copyright .foooter__logo{margin: 0 12px 0 13px;}
+	.footer__contact{margin-bottom: 36px;}
+	.footer__feedback span{margin-bottom: 11px;}
+	.footer .container{justify-content: flex-start; gap:128px;}
+}

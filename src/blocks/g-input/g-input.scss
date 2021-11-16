@@ -1,0 +1,75 @@
+.g-input
+{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.g-input__input
+{
+	width: 100%;
+	font-size: rem(13);
+	line-height: rem(17);
+	font-weight: $regular;
+	color: #4D4D4D;
+	background: #F2F4F7;
+	border: 2px solid #F2F4F7;
+	height: 56px;
+	border-radius: 4px;
+	padding: 24px 12px 24px 8px;
+	outline-offset: 0px;
+	&:focus
+	{
+		border: 2px solid #DCDCE6;
+		background: white;
+	}
+	&::placeholder{display: none; opacity: 0;}
+}
+.g-input__placeholder
+{
+	position: absolute;
+	top: 20px;
+	left: 16px;
+	color: #4D4D4D;
+	height: 16px;
+	line-height: 16px;
+	font-weight: 300;
+	user-select: none;
+	pointer-events: none;
+	transition: all .3s;
+	.g-input__input:focus + &,
+	.g-input__input--active + &,
+	{
+		font-size: 12px;
+		line-height: 16px;
+		color: #969BA5;
+		top: 8px;
+		left: 10px;
+	}
+}
+
+.g-input.error
+{
+	.g-input__placeholder {color: #E64646;}
+	.g-input__input
+	{
+		border: 1px solid #E64646;
+		background: rgba(255, 12, 12, 0.08);
+	}
+
+	.g-input__sub
+	{
+		display: block;
+		position: absolute;
+	}
+}
+.g-input__sub
+{
+	display: none;
+	font-size: rem(10);
+	line-height: rem(13);
+	font-weight: $regular;
+	color: #E64646;
+	font-size: 11px;
+	font-weight: 300;
+	right: 0;
+}
