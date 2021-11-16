@@ -1,0 +1,22 @@
+<section class="managed-objects">
+	<div class="managed-objects__header">
+		<h2>Объекты в управленнии</h2>
+		<a href="#" class="managed-objects__button managed-objects__button--desktop g-button g-button--white">Все объекты</a>
+	</div>
+	<div class="managed-objects__list">
+	 	{% for i in 1..3 %}
+			<div class="g-object-card">
+				<a href="#">
+					<picture>
+						<source srcset="img/object-card-1.webp" type="image/webp">
+						<img class="g-object-card__image" src="img/object-card-1.png" alt="House">
+					</picture>
+				</a>
+				<h3>Вавилова ул, 67</h3>
+				<span>Москва г.</span>
+				<span class="g-object-card__type"><span>Тип здания:</span> МКД</span>
+			</div>
+		{% endfor %}
+	</div>
+	<a href="#" class="managed-objects__button managed-objects__button--mobile g-button g-button--white">Все объекты</a>
+</section>

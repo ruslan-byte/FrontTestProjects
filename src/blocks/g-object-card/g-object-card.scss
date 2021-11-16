@@ -1,0 +1,24 @@
+.g-object-card
+{
+	width: 100%;
+}
+.g-object-card__image
+{
+	border-radius: 8px;
+	transition: filter .3s ease;
+	margin-bottom: 5px;
+	width: 100%;
+	&:hover { filter: brightness(85%); }
+
+}
+.g-object-card span
+{
+	display: block;
+	font-size: 15px;
+	line-height: 20px;
+	color: #4D4D4D;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+}
+.g-object-card__type > span{display: inline-block; margin-right: 4px;}
