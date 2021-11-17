@@ -1,0 +1,18 @@
+<section class="news g-cards-list">
+	<div class="g-cards-list__header">
+		<h4>Новости</h4>
+		<a href="#" class="g-cards-list__button g-cards-list__button--desktop g-button g-button--white">Все новости</a>
+	</div>
+	<div class="g-cards-list__list">
+	 	{% for i in 1..3 %}
+			<div class="g-news-card g-cards-list__card">
+				<h5>Капитальный ремонт</h5>
+				<p class="g-news-card__subtitle">
+					В 2012 году в рамках исполнения Федерального закона № 185 от 21 июля 2007 года «О фонде содействия реформированию
+				</p>
+				<p class="g-news-card__date">15.01.2013</p>
+			</div>
+		{% endfor %}
+	</div>
+	<a href="#" class="g-cards-list__button g-cards-list__button--mobile g-button g-button--white">Все новости</a>
+</section>

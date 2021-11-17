@@ -1,0 +1,29 @@
+.g-news-card
+{
+	border: 1px solid #EAEAEA;
+	border-radius: 8px;
+	padding: 24px;
+	padding-right: 15px;
+	.g-news-card__subtitle
+	{
+		display: -webkit-box;
+		margin-bottom: 24px;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.g-news-card__date
+	{
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 18px;
+		letter-spacing: 0px;
+		text-align: left;
+	}
+}

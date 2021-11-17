@@ -1,6 +1,7 @@
 .g-object-card
 {
 	width: 100%;
+	padding-bottom: 16px;
 }
 .g-object-card__image
 {
@@ -22,3 +23,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 .g-object-card__type > span{display: inline-block; margin-right: 4px;}
+@media (min-width: $tablet) {
+	.g-object-card{ padding-bottom: 0; }
+}
