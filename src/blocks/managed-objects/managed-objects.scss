@@ -14,6 +14,7 @@
 }
 .managed-objects__button--mobile{width: 100%;}
 .managed-objects__button--desktop{display: none;}
+.managed-objects__header{margin-bottom: 16px;}
 
 @media (min-width: $tablet)
 {
@@ -24,6 +25,7 @@
 		grid-template-columns: repeat(2, minmax(344px, 1fr));
 		.g-object-card:nth-of-type(3){display: none;}
 	}
+	.managed-objects__header{margin-bottom: 32px;}
 }
 @media (min-width: $desktop)
 {

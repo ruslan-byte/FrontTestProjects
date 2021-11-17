@@ -34,8 +34,27 @@ h1
 	font-weight: 500;
 	letter-spacing: .3px;
 }
-
 h2
+{
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 38px;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+}
+h3
+{
+	margin: 0;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h4
 {
 	margin: 0;
 	font-size: 20px;
@@ -47,8 +66,7 @@ h2
 
 }
 
-
-h3
+h5
 {
 	margin-top: 0;
 	margin-bottom: 4px;
@@ -58,15 +76,7 @@ h3
 	font-smoothing: grayscale;
 	-webkit-font-smoothing: grayscale;
 	-moz-osx-font-smoothing: grayscale;
-}
 
-
-h4
-{
-	font-size: 15px;
-	letter-spacing: 2.4px;;
-	line-height: 24px;
-	margin:0px 0 8px 0;
 }
 
 p
@@ -95,7 +105,12 @@ a:focus
 @media (min-width: $tablet)
 {
 	h1{font-size: 44px; line-height: 48px; }
-	h2
+	h3
+	{
+		font-size: 32px;
+		line-height: 38px;
+	}
+	h4
 	{
 		font-size: 24px;
 		font-weight: 600;
@@ -114,7 +129,7 @@ a:focus
 @media (min-width: $widescreen)
 {
 	h1{font-size: 64px;}
-	h2
+	h4
 	{
 		font-size: 32px;
 		line-height: 38px;
