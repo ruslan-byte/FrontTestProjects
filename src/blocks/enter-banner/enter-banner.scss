@@ -1,0 +1,106 @@
+.enter-banner
+{
+	border-radius: 8px;
+	margin-bottom: 64px;
+	h4{margin-bottom: 32px;}
+}
+.enter-banner__content
+{
+	background: #F8F9FB;
+	padding: 32px 16px;
+	border-radius: 8px;
+	max-width: 576px;
+	margin:0 auto;
+}
+.enter-banner__list
+{
+	position: relative;
+	padding-left: 45px;
+}
+.enter-banner__list li
+{
+	margin-bottom: 24px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+}
+.enter-banner__list li::before
+{
+	content:'';
+	display: block;
+	background: url('/svg/check.svg') bottom center;
+	position: absolute;
+	left: 0;
+	width: 32px;
+	height: 32px;
+}
+.enter-banner__form{display: none;}
+@media (min-width: $tablet) {
+	.enter-banner { margin-bottom: 64px; }
+	.enter-banner__content{padding: 64px 24px;}
+	.enter-banner__list{margin-bottom: 64px;}
+}
+@media (min-width: $desktop) {
+	.enter-banner h4
+	{
+		font-size: 32px;
+		line-height: 38px;
+	}
+	.enter-banner { display: flex; }
+	.enter-banner__content
+	{
+		margin: 0;
+		padding: 118px 80px 118px 56px;
+		border-radius: 8px 0 0 8px;
+		max-width: unset;
+		flex-basis: 57%;
+		.enter-banner__button{display: none;}
+	}
+	.enter-banner__form
+	{
+		display: block;
+		padding: 124px 32px 124px 80px;
+		border-radius: 0 8px 8px 0 ;
+		border: 1px solid #F2F4F7;
+		flex-basis: 43%;
+		border-left: none;
+		.g-input:first-child{margin-bottom: 16px;}
+		.g-input:nth-of-type(2){margin-bottom: 24px;}
+		.g-input__input
+		{
+			height: 48px;
+			padding-top: 22px;
+			padding-bottom: 22px;
+		}
+		.g-input__placeholder{top: 16px;}
+	}
+	.enter-banner__link
+	{
+		display: inline-block;
+		margin-bottom: 24px;
+		color: #969BA5;
+		font-smoothing: grayscale;
+		-webkit-font-smoothing: grayscale;
+		-moz-osx-font-smoothing: grayscale;
+		margin-bottom: 24px;
+	}
+	.enter-banner__button{margin-bottom: 16px}
+	.enter-banner__link--center
+	{
+		margin: 0;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.enter-banner__registration
+	{
+		text-align: center;
+		font-size: 0;
+	}
+}
+@media (min-width: $widescreen) {
+	.enter-banner__content{padding: 118px 127px 118px 98px;  }
+	.enter-banner__form{padding: 124px 109px 124px 86px;}
+}
