@@ -1,0 +1,32 @@
+<div class="_login-popup">
+	<div class="g-popup__content _popup-content">
+		<div class="g-popup__header">
+			<div class="g-popup__close" onclick="o2.gPopup.close()">
+				{% include "assets/svg/cross.svg" %}
+			</div>
+		</div>
+		<form class="login-popup g-form g-popup__container">
+			<h2>Войти в личный кабинет</h2>
+			<label class="g-input">
+				<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+				<span class="g-input__placeholder">Эл.почта</span>
+				<div class="g-input__sub">Name already exist</div>
+			</label>
+			<label class="g-input">
+				<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+				<span class="g-input__placeholder">Пароль</span>
+				<div class="g-input__sub">Name already exist</div>
+			</label>
+
+			<button href="#" class="g-form__button" type="button">
+				Восстановление доступа
+			</button>
+
+			<button class="g-form__submit g-button g-button--black" >Войти</button>
+
+			<div class="g-form__hint">
+				<a href="#" class="g-form__link">Зарегистрироваться</a>
+			</div>
+		</form>
+	</div>
+</div>

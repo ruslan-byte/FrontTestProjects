@@ -54,13 +54,13 @@
 				<a class="header__number" href="tel:84951379621">
 					8 (495) 137-96-21
 				</a>
-				<div class="header__user">
-					<a href="#" class="header__user-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div class="header__user" onclick="o2.gPopup.open('_login-popup')">
+					<button href="#" class="header__user-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="8" cy="4.5" r="2.75" stroke="#4D4D4D" stroke-width="1.5"/>
 <path d="M3.38966 13.9612C2.88673 13.8979 2.78665 13.7432 2.77451 13.722C2.75629 13.6901 2.71073 13.5629 2.82497 13.2722C3.63559 11.2094 5.6476 9.75 8 9.75C10.3524 9.75 12.3644 11.2094 13.175 13.2722C13.2893 13.5629 13.2437 13.6901 13.2255 13.722C13.2134 13.7432 13.1133 13.8979 12.6103 13.9612C9.54888 14.3463 6.45112 14.3463 3.38966 13.9612Z" stroke="#4D4D4D" stroke-width="1.5"/>
 </svg>
-</a>
-					<a href="#" class="header__button g-button g-button--white g-button--small">Войти</a>
+</button>
+					<button class="header__button g-button g-button--white g-button--small">Войти</button>
 				</div>
 				<button class="header__search">
 					<svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
@@ -97,6 +97,12 @@
 	<ul>
 					<li>
 				<a href="http://localhost:3000/index.html">index.html</a>
+			</li>
+					<li>
+				<a href="http://localhost:3000/login-page.html">login-page.html</a>
+			</li>
+					<li>
+				<a href="http://localhost:3000/login-popup.html">login-popup.html</a>
 			</li>
 			</ul>
 	<style>
@@ -171,6 +177,44 @@
 				</a>
 				<span>УК Управление паркингами</span>
 			</div>
+		</div>
+		<div class="g-popup _overlay"></div>
+		<div style="display: none;">
+			<div class="_login-popup">
+	<div class="g-popup__content _popup-content">
+		<div class="g-popup__header">
+			<div class="g-popup__close" onclick="o2.gPopup.close()">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1L1 15L15 1Z" stroke-width="1.5" stroke-linecap="square"/>
+	<path d="M1 1L15 15" stroke-width="1.5"/>
+</svg>
+			</div>
+		</div>
+		<form class="login-popup g-form g-popup__container">
+			<h2>Войти в личный кабинет</h2>
+			<label class="g-input">
+				<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+				<span class="g-input__placeholder">Эл.почта</span>
+				<div class="g-input__sub">Name already exist</div>
+			</label>
+			<label class="g-input">
+				<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+				<span class="g-input__placeholder">Пароль</span>
+				<div class="g-input__sub">Name already exist</div>
+			</label>
+
+			<button href="#" class="g-form__button" type="button">
+				Восстановление доступа
+			</button>
+
+			<button class="g-form__submit g-button g-button--black" >Войти</button>
+
+			<div class="g-form__hint">
+				<a href="#" class="g-form__link">Зарегистрироваться</a>
+			</div>
+		</form>
+	</div>
+</div>
 		</div>
 	</footer>
 	<script type="text/javascript" src="./main.min.js" defer="" async=""></script>

@@ -7,8 +7,8 @@
 .g-input__input
 {
 	width: 100%;
-	font-size: rem(13);
-	line-height: rem(17);
+	font-size: 16px;
+	line-height: 16px;
 	font-weight: $regular;
 	color: #4D4D4D;
 	background: #F2F4F7;
@@ -22,7 +22,11 @@
 		border: 2px solid #DCDCE6;
 		background: white;
 	}
-	&::placeholder{display: none; opacity: 0;}
+	&::placeholder
+	{
+		display: none;
+		opacity: 0;
+	}
 }
 .g-input__placeholder
 {
@@ -31,6 +35,7 @@
 	left: 16px;
 	color: #4D4D4D;
 	height: 16px;
+	font-size: 16px;
 	line-height: 16px;
 	font-weight: 300;
 	user-select: none;

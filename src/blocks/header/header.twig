@@ -30,9 +30,9 @@
 				<a class="header__number" href="tel:84951379621">
 					8 (495) 137-96-21
 				</a>
-				<div class="header__user">
-					<a href="#" class="header__user-icon">{% include "/assets/svg/persone.svg" %}</a>
-					<a href="#" class="header__button g-button g-button--white g-button--small">Войти</a>
+				<div class="header__user" onclick="o2.gPopup.open('_login-popup')">
+					<button href="#" class="header__user-icon">{% include "/assets/svg/persone.svg" %}</button>
+					<button class="header__button g-button g-button--white g-button--small">Войти</button>
 				</div>
 				<button class="header__search">
 					{% include "/assets/svg/loupe.svg" %}

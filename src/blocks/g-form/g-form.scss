@@ -1,0 +1,48 @@
+.g-form .g-input:first-child{margin-bottom: 16px;}
+.g-form .g-input:last-of-type{margin-bottom: 32px;}
+.g-form__link
+{
+	display: inline-block;
+	color: #969BA5;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: underline;
+	font-size: 14px;
+	line-height: 18px;
+	&:hover{text-decoration: none;}
+}
+.g-form__button
+{
+	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 32px;
+	border: none;
+	color: #969BA5;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.g-form__hint
+{
+	text-align: center;
+	font-size: 0;
+}
+.g-input{margin-bottom: 16px;}
+.g-form__submit
+{
+	display: block;
+	width: 100%;
+	margin-bottom: 16px;
+	max-height: unset;
+	height: 56px;
+	font-size: 16px;
+}
+@media (min-width: $tablet) {
+	.g-form__link
+	{
+		font-size: 16px;
+		line-height: 18px;
+	}
+}

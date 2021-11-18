@@ -1,0 +1,96 @@
+.ui-kit__section .ui-kit__title--popup
+{
+	margin-bottom: 30px;
+}
+.g-popup
+{
+	position: fixed;
+	top:0px;
+	left:0px;
+	min-height: 100vh;
+	width:100%;
+	background: rgba(124, 119, 145, 0.1);;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+	visibility: hidden;
+	opacity:0;
+	&.open
+	{
+		visibility: visible;
+		opacity:1;
+	}
+}
+.g-popup__content
+{
+	width: 100%;
+	background: #fff;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 8px;
+	font-size: 14px;
+	box-shadow: 0 4px 10px rgba(0,0,0,.08);
+	overflow: auto;
+	position: relative;
+
+}
+.g-popup__container
+{
+	margin: 0 auto;
+	max-width: 608px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 100px;
+}
+.g-popup__close
+{
+	position: absolute;
+	top: 17px;
+	right: 17px;
+	cursor: pointer;
+	path{stroke: #969BA5}
+}
+.g-popup__header
+{
+	height: 48px;
+	border-bottom: 1px solid #F0F0F5;
+	margin-bottom: 107px;
+}
+@media(min-width: $tablet)
+{
+	.g-popup__header
+	{
+		height: 48px;
+		margin-bottom: 160px;
+	}
+}
+@media(min-width: $desktop)
+{
+	.g-popup
+	{
+		top: 65px;
+		background: url("/img/house.png");
+		min-height: calc(100vh - 65px);
+		padding: 10px 0;
+		height: unset;
+	}
+	.g-popup__content
+	{
+		max-width: 512px;
+		max-height: calc(100vh - 85px);
+		height: unset;
+	}
+	.g-popup__header
+	{
+		margin-bottom: 44px;
+		border: none;
+	}
+	.g-popup__container
+	{
+		padding-left:32px;
+		padding-right: 32px;
+		padding-bottom: 48px;
+	}
+
+}

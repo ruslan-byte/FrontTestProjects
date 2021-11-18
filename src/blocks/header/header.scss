@@ -25,7 +25,12 @@
 	.header__user
 	{
 		margin-right: 16px;
-		.header__user-icon { height: 16px; width: 16px; }
+		.header__user-icon
+		{
+			border: none;
+			height: 16px;
+			width: 16px;
+		}
 	}
 	.header__search
 	{
