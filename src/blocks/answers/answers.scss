@@ -1,0 +1,17 @@
+.answers
+{
+	margin-bottom: 96px;
+	h4{margin-bottom: 8px;}
+}
+@media (min-width: $tablet)
+{
+	.answers
+	{
+		margin-bottom: 96px;
+		h4
+		{
+			margin-bottom: 32px;
+			line-height: 38px
+		}
+	}
+}
