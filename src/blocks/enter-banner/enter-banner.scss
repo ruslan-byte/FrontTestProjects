@@ -42,14 +42,23 @@
 	.enter-banner { margin-bottom: 64px; }
 	.enter-banner__content{padding: 64px 24px;}
 	.enter-banner__list{margin-bottom: 64px;}
+	.enter-banner__list li{margin-bottom: 32px;}
 }
 @media (min-width: $desktop) {
+	.enter-banner__list
+	{
+		margin-bottom: 0;
+		li:last-child{margin-bottom: 0;}
+	}
 	.enter-banner h4
 	{
 		font-size: 32px;
 		line-height: 38px;
 	}
-	.enter-banner { display: flex; }
+	.enter-banner
+	{
+		display: flex;
+	}
 	.enter-banner__content
 	{
 		margin: 0;
@@ -62,7 +71,7 @@
 	.enter-banner__form
 	{
 		display: block;
-		padding: 124px 32px 124px 80px;
+		padding: 124px 32px 118px 80px;
 		border-radius: 0 8px 8px 0 ;
 		border: 1px solid #F2F4F7;
 		flex-basis: 43%;

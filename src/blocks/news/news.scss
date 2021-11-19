@@ -6,7 +6,11 @@
 }
 @media (min-width: $desktop)
 {
-	.news{margin-bottom: 96px;}
+	.news
+	{
+		margin-bottom: 96px;
+		.g-card-list__header{align-items: center;}
+	}
 }
 @media (min-width: $widescreen)
 {

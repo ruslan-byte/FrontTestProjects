@@ -1,6 +1,8 @@
+.header{margin-bottom: 64px;}
 .header__top
 {
 	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 64px;
 	.container
 	{
 		display: flex;
@@ -83,6 +85,7 @@
 }
 @media (min-width: $desktop)
 {
+	.header{margin-bottom: 96px;}
 	.header .container{height: 64px;}
 	.header__nav
 	{
@@ -115,6 +118,7 @@
 }
 @media (min-width: $widescreen)
 {
+	.header{margin-bottom: 126px;}
 	.header__top .header__user{margin: 0;}
 	.header__section--left{margin-right: 3px;}
 	.header__logo{margin-right: 21px;}
