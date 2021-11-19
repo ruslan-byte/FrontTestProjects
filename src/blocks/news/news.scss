@@ -9,10 +9,14 @@
 	.news
 	{
 		margin-bottom: 96px;
-		.g-card-list__header{align-items: center;}
+		.g-cards-list__header{align-items: center;}
 	}
 }
 @media (min-width: $widescreen)
 {
-	.news{margin-bottom: 128px;}
+	.news
+	{
+		margin-bottom: 128px;
+		.g-cards-list__header{margin-bottom: 28px;}
+	}
 }

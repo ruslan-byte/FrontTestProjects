@@ -58,6 +58,7 @@
 	.enter-banner
 	{
 		display: flex;
+		margin-bottom: 87px;
 	}
 	.enter-banner__content
 	{
@@ -95,6 +96,7 @@
 	}
 }
 @media (min-width: $widescreen) {
+	.enter-banner{margin-bottom: 97px;}
 	.enter-banner__content{padding: 118px 127px 118px 98px;  }
-	.enter-banner__form{padding: 124px 109px 124px 86px;}
+	.enter-banner__form{padding: 124px 109px 117px 86px;}
 }

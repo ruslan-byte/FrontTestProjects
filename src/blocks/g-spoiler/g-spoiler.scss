@@ -72,3 +72,7 @@
 	}
 	.g-spoiler__list{padding-top: 48px;}
 }
+@media (min-width: $desktop)
+{
+	.g-spoiler__title::after{right: 2px; top:4px;}
+}
