@@ -6,7 +6,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: 48px;
+		height: 47px;
 	}
 	.header__logo
 	{
@@ -24,7 +24,8 @@
 	.header__section {display: flex; align-items: center;}
 	.header__user
 	{
-		margin-right: 16px;
+		height: 19px;
+		margin-right: 17px;
 		.header__user-icon
 		{
 			border: none;
@@ -38,6 +39,7 @@
 		width: 13px;
 		height: 13px;
 		font-size: 0;
+		margin-right: 2px;
 		svg{fill: none;}
 		path,
 		circle{stroke: #4D4D4D;}
@@ -76,6 +78,11 @@
 .header__button{display: none;}
 @media (min-width: $tablet)
 {
+	.header__top .header__search{margin-right: 5px;}
+	.header__top .header__number{margin-right: 17px;}
+}
+@media (min-width: $desktop)
+{
 	.header .container{height: 64px;}
 	.header__nav
 	{
@@ -86,12 +93,14 @@
 			font-size: 15px;
 			font-weight: 600;
 		}
+		.header__link{margin-right: 7px;}
 	}
-	.header__logo{margin-right: 20px;}
+	.header__logo{margin-right: 28px;}
 	.header__top .header__number
 	{
 		font-size: 14px;
 		font-weight: 500;
+		margin-right: 14px;
 	}
 	.header__top .header__logo
 	{
@@ -99,8 +108,14 @@
 		height: 36px;
 	}
 
-	.header__top .header__user{width: unset; height: unset;}
+	.header__top .header__user{width: unset; height: unset; margin-right: 11px;}
 	.header__button {display: inline-block;}
 	.header__user-icon {display: none;}
 	.header__search{display: none;}
+}
+@media (min-width: $widescreen)
+{
+	.header__top .header__user{margin: 0;}
+	.header__section--left{margin-right: 3px;}
+	.header__logo{margin-right: 21px;}
 }

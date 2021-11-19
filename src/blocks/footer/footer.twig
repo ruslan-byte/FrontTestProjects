@@ -36,9 +36,9 @@
 					<span>Диспетчерская</span>
 					<a class="footer__number" href="tel:74957772543">+7 (495) 777-25-43 </a>
 				</div>
-				<div class="footer__feedback">
+				<div class="footer__feedback" >
 					<span>Есть жалобы или предложения?</span>
-					<button class="g-button g-button--black">Оставить обращение</button>
+					<button class="g-button g-button--black" onclick="o2.gPopup.open('_feedback-popup')">Оставить обращение</button>
 				</div>
 			</div>
 			<div class="footer__copyright footer__copyright--mobile">
@@ -51,6 +51,7 @@
 		<div class="g-popup _overlay"></div>
 		<div style="display: none;">
 			{% include "blocks/login-popup/login-popup.twig" %}
+			{% include "blocks/feedback-popup/feedback-popup.twig" %}
 		</div>
 	</footer>
 {% endblock %}

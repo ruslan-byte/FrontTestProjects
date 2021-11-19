@@ -1,0 +1,40 @@
+<div class="_feedback-popup">
+	<div class="g-popup__content _popup-content">
+		<div class="g-popup__header">
+			<div class="g-popup__close" onclick="o2.gPopup.close()">
+				{% include "assets/svg/cross.svg" %}
+			</div>
+		</div>
+		<form class="feedback-popup g-form g-popup__container">
+			<h2>Свяжитесь с нами</h2>
+			<p>Если у вас вопросы, жалобы или предложения, воспользуйтесь формой обратной связи.</p>
+			<label class="g-input">
+				<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+				<span class="g-input__placeholder">Сообщение</span>
+				<div class="g-input__sub">Name already exist</div>
+			</label>
+			<div class="g-form__row">
+				<label class="g-input">
+					<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+					<span class="g-input__placeholder">Имя</span>
+					<div class="g-input__sub">Name already exist</div>
+				</label>
+				<label class="g-input">
+					<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+					<span class="g-input__placeholder">Телефон</span>
+					<div class="g-input__sub">Name already exist</div>
+				</label>
+			</div>
+			<label class="g-input feedback-popup__last-input">
+				<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+				<span class="g-input__placeholder">Эл. почта</span>
+				<div class="g-input__sub">Name already exist</div>
+			</label>
+			<button class="g-form__submit g-button g-button--black" >Отправить</button>
+
+			<div class="g-form__hint">
+				<p>Нажимая кнопку «Далее», вы подтверждаете свое согласие  на обработку персональных данных</p>
+			</div>
+		</form>
+	</div>
+</div>

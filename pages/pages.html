@@ -22,7 +22,7 @@
 	<header class="header">
 	<div class="header__top">
 		<div class="container">
-			<div class="header__section">
+			<div class="header__section header__section--left">
 				<a href="/" class="header__logo" >
 					<svg viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16.2234 1.2171C17.9276 0.415579 19.7877 0 21.671 0H26.3111V6.01376H24.4387C21.7023 6.01376 18.9974 6.59871 16.5055 7.72939L13.5244 9.08201L20.2866 12.1503H26.3111V18.164H20.2866L10.613 23.0928C9.21323 23.806 7.66449 24.1778 6.09345 24.1778H0V18.164H2.72476C4.81919 18.164 6.8902 17.7234 8.80328 16.8709L12.7867 15.0958L6.02451 12.0275H0V6.01376H6.02451L16.2234 1.2171Z"/>
@@ -163,9 +163,9 @@
 					<span>Диспетчерская</span>
 					<a class="footer__number" href="tel:74957772543">+7 (495) 777-25-43 </a>
 				</div>
-				<div class="footer__feedback">
+				<div class="footer__feedback" >
 					<span>Есть жалобы или предложения?</span>
-					<button class="g-button g-button--black">Оставить обращение</button>
+					<button class="g-button g-button--black" onclick="o2.gPopup.open('_feedback-popup')">Оставить обращение</button>
 				</div>
 			</div>
 			<div class="footer__copyright footer__copyright--mobile">
@@ -211,6 +211,49 @@
 
 			<div class="g-form__hint">
 				<a href="#" class="g-form__link">Зарегистрироваться</a>
+			</div>
+		</form>
+	</div>
+</div>
+			<div class="_feedback-popup">
+	<div class="g-popup__content _popup-content">
+		<div class="g-popup__header">
+			<div class="g-popup__close" onclick="o2.gPopup.close()">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1L1 15L15 1Z" stroke-width="1.5" stroke-linecap="square"/>
+	<path d="M1 1L15 15" stroke-width="1.5"/>
+</svg>
+			</div>
+		</div>
+		<form class="feedback-popup g-form g-popup__container">
+			<h2>Свяжитесь с нами</h2>
+			<p>Если у вас вопросы, жалобы или предложения, воспользуйтесь формой обратной связи.</p>
+			<label class="g-input">
+				<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+				<span class="g-input__placeholder">Сообщение</span>
+				<div class="g-input__sub">Name already exist</div>
+			</label>
+			<div class="g-form__row">
+				<label class="g-input">
+					<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+					<span class="g-input__placeholder">Имя</span>
+					<div class="g-input__sub">Name already exist</div>
+				</label>
+				<label class="g-input">
+					<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+					<span class="g-input__placeholder">Телефон</span>
+					<div class="g-input__sub">Name already exist</div>
+				</label>
+			</div>
+			<label class="g-input feedback-popup__last-input">
+				<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+				<span class="g-input__placeholder">Эл. почта</span>
+				<div class="g-input__sub">Name already exist</div>
+			</label>
+			<button class="g-form__submit g-button g-button--black" >Отправить</button>
+
+			<div class="g-form__hint">
+				<p>Нажимая кнопку «Далее», вы подтверждаете свое согласие  на обработку персональных данных</p>
 			</div>
 		</form>
 	</div>
