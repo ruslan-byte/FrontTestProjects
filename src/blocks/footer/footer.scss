@@ -21,6 +21,7 @@
 {
 	font-size: 24px;
 	line-height: 32px;
+	letter-spacing: .7px;
 	color:#4D4D4D;
 	&:hover{color:#969BA5;}
 }
@@ -64,7 +65,7 @@
 	span
 	{
 		display: inline-block;
-		margin-bottom: 19px;
+		margin-bottom: 14px;
 		font-smoothing: grayscale;
 		-webkit-font-smoothing: grayscale;
 		-moz-osx-font-smoothing: grayscale;
