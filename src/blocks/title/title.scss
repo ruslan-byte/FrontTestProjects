@@ -1,10 +1,14 @@
-.title{ margin-bottom: 96px; }
+.title
+{
+	margin-bottom: 96px;
+	margin-top: 64px;
+}
 .title__company-name{ color: #00A00B; }
 @media (min-width: $desktop)
 {
-	.title{ margin-bottom: 130px; }
+	.title{ margin-bottom: 130px; margin-top: 96px;}
 }
 @media (min-width: $widescreen)
 {
-	.title{ margin-bottom: 198px; }
+	.title{ margin-bottom: 198px; margin-top: 126px;}
 }

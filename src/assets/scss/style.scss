@@ -17,6 +17,7 @@
 @import 'blocks/g-spoiler/g-spoiler';
 @import 'blocks/g-popup/g-popup';
 @import 'blocks/g-form/g-form';
+@import 'blocks/g-select/g-select';
 @import 'blocks/search/search';
 @import 'blocks/header/header';
 @import 'blocks/footer/footer';
@@ -30,6 +31,7 @@
 /* Пример подключения*/
 /* @import 'blocks/component/component'; */
 /* pages */
+@import 'pages/object/object';
 
 
 * {
