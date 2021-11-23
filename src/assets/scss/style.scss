@@ -28,6 +28,8 @@
 @import 'blocks/answers/answers';
 @import 'blocks/login-popup/login-popup';
 @import 'blocks/feedback-popup/feedback-popup';
+@import 'blocks/page-select/page-select';
+@import 'blocks/bread-crumb/bread-crumb';
 /* Пример подключения*/
 /* @import 'blocks/component/component'; */
 /* pages */
@@ -52,4 +54,42 @@ html
 	font-size: $mainFontSize;
 	color: $mainFontColor;
 	-webkit-font-smoothing: antialiased;
+}
+.information-layout main
+{
+	display: grid;
+	margin-bottom: 128px;
+	margin-top: 32px;
+}
+.information-layout .header
+{
+	background: white;
+	position: relative;
+	z-index: 11;
+}
+.information-layout__page-select--desktop{display: none;}
+@media(min-width: $tablet)
+{
+	.information-layout main{margin-top: 64px;}
+}
+@media(min-width: $desktop)
+{
+	.information-layout main
+	{
+		grid-template-columns: 216px minmax(640px, 1fr);
+		gap: 106px;
+		margin-top: 96px;
+	}
+	.information-layout main .container{padding-left: 0;}
+	.information-layout__page-select--desktop{display: block;}
+	.information-layout__page-select--mobile{display: none;}
+}
+@media(min-width: $widescreen)
+{
+	.information-layout main
+	{
+		grid-template-columns: 301px 640px;
+		gap: 163px;
+		margin-top: 64px;
+	}
 }

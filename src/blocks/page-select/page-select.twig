@@ -1,0 +1,27 @@
+<div class="page-select _page-select">
+	<button class="page-select__button" onclick="o2.pageSelect.open()">
+		Общая информация
+		<div class="page-select__icon">
+			{% include "assets/svg/arrow-down.svg" %}
+		</div>
+	</button>
+	<ul class="page-select__list _page-select__list">
+		<li><a class="page-select__link" href="#">Общая информация</a></li>
+		<li>
+			<a class="page-select__link page-select__link--active">Общие сведения о МКД</a>
+			<div class="page-select__sublist">
+				<ul>
+					<li><a class="page-select__link page-select__link--active" href="#">Технические характеристики</a></li>
+					<li><a class="page-select__link" href="#">Лица, осуществляющие управление</a></li>
+					<li><a class="page-select__link" href="#">Лица, оказывающие услуги</a></li>
+					<li><a class="page-select__link" href="#">РСО</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a class="page-select__link" href="#">Помещения здания</a></li>
+		<li><a class="page-select__link" href="#">Тарифы</a></li>
+		<li><a class="page-select__link" href="#">Сведения о коммунальных услугах</a></li>
+		<li><a class="page-select__link" href="#">Сведения о поставленных ресурсах</a></li>
+	</ul>
+	<div class="page-select__background"></div>
+</div>
