@@ -2,6 +2,7 @@
 {
 	width: 100%;
 }
+.g-table__title{font-weight: 600;}
 .g-table__row
 {
 	border-bottom: 1px solid #E6E6E6;
@@ -10,7 +11,7 @@
 		min-height: 50px;
 		padding: 15px 0;
 	}
-	.g-table-item:first-child{width: 58%;}
+	.g-table-item:first-child{width: 58%;padding-right: 20px;}
 	.g-table-item:last-child{width: 42%;}
 }
 @media (min-width: $tablet)

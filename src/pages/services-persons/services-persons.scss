@@ -1,0 +1,8 @@
+.services-persons table{margin-bottom: 32px;}
+@media (min-width: $tablet) {
+	.services-persons h4{font-weight: 500}
+}
+@media (min-width: $widescreen)
+{
+	.services-persons h4{font-size: 24px;}
+}
