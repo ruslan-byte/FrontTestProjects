@@ -4,19 +4,21 @@
 }
 .g-table__row
 {
-	display: block;
 	border-bottom: 1px solid #E6E6E6;
-	min-height: 50px;
-	padding: 15px 0;
-	.g-table-item:first-child
+	.g-table-item
 	{
-		width: 58%;
-		padding-right: 110px;
+		min-height: 50px;
+		padding: 15px 0;
 	}
+	.g-table-item:first-child{width: 58%;}
 	.g-table-item:last-child{width: 42%;}
 }
 @media (min-width: $tablet)
 {
-	.g-table__row .g-table-item:first-child{width: 65%;}
+	.g-table__row .g-table-item:first-child{width: 65%;padding-right: 110px;}
 	.g-table__row .g-table-item:last-child{width: 35%;}
+}
+@media (min-width: $widescreen)
+{
+	.g-table__row .g-table-item:first-child{width: 54%; padding-right: 60px;}
 }
