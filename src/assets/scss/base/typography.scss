@@ -27,6 +27,7 @@ address
 td
 {
 	font-size: 14px;
+	line-height: 18px;
 	font-smoothing: grayscale;
 	-webkit-font-smoothing: grayscale;
 	-moz-osx-font-smoothing: grayscale;
@@ -53,6 +54,7 @@ h2
 h3
 {
 	margin: 0;
+	margin-bottom: 16px;
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 32px;
@@ -65,6 +67,7 @@ h4
 {
 	margin: 0;
 	font-size: 20px;
+	margin-bottom: 16px;
 	font-weight: 500;
 	line-height: 28px;
 	font-smoothing: grayscale;
