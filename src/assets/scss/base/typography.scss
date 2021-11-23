@@ -24,7 +24,13 @@ address
 {
 	font-style: normal;
 }
-
+td
+{
+	font-size: 14px;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+}
 h1
 {
 	margin: 0;
@@ -117,7 +123,7 @@ a:focus
 		font-weight: 600;
 		line-height: 32px;
 	}
-
+	td{font-size: 15px;}
 }
 @media (min-width: $desktop)
 {

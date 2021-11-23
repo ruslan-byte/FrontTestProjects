@@ -1,0 +1,22 @@
+.object-detail__title{margin-bottom: 16px;}
+.object-detail__image
+{
+	width: 100%;
+	margin-bottom: 19px;
+	border-radius: 4px;
+	min-height: 224px;
+}
+.object-detail__subtitle{margin-bottom: 16px;}
+@media(min-width: $tablet)
+{
+	.object-detail__subtitle
+	{
+		margin-bottom: 32px;
+		font-weight: 500;
+	}
+	.object-detail__title{margin-bottom: 32px;}
+	.object-detail__image{margin-bottom: 25px;}
+}
+@media(min-width: $desktop){
+	.object-detail__title{margin-bottom: 18px;}
+}

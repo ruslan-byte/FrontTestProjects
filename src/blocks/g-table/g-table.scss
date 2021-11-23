@@ -1,0 +1,21 @@
+.g-table
+{
+	width: 100%;
+}
+.g-table__row
+{
+	border-bottom: 1px solid #E6E6E6;
+	height: 50px;
+  	border-spacing: 50px 0;
+	.g-table-item:first-child{width: 58%;}
+	.g-table-item:last-child{width: 42%;}
+}
+@media (min-width: $tablet)
+{
+	.g-table__row{height: 48px;}
+	.g-table__row .g-table-item:first-child{width: 65%;}
+	.g-table__row .g-table-item:last-child{width: 35%;}
+}
+@media (min-width: $desktop)
+{
+}

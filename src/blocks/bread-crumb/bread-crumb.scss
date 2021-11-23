@@ -2,20 +2,22 @@
 
 @media(min-width: $desktop)
 {
-	.bread-crumb{margin-bottom: 20px;}
+	.bread-crumb
+	{
+		margin-bottom: 15px;
+		line-height: 12px;
+	}
 	.bread-crumb__button
 	{
 		display: inline;
 		border: none;
 		font-size: 0;
-		font-style: normal;
 		font-weight: 500;
 		line-height: 12px;
-		letter-spacing: 0px;
 		text-align: center;
 		stroke: #CCCCCC;
-		vertical-align: middle;
 		color: #CCCCCC;
+		vertical-align: middle;
 		font-smoothing: grayscale;
 		-webkit-font-smoothing: grayscale;
 		-moz-osx-font-smoothing: grayscale;

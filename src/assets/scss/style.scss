@@ -18,6 +18,7 @@
 @import 'blocks/g-popup/g-popup';
 @import 'blocks/g-form/g-form';
 @import 'blocks/g-select/g-select';
+@import 'blocks/g-table/g-table';
 @import 'blocks/search/search';
 @import 'blocks/header/header';
 @import 'blocks/footer/footer';
@@ -34,6 +35,7 @@
 /* @import 'blocks/component/component'; */
 /* pages */
 @import 'pages/object/object';
+@import 'pages/object-detail/object-detail';
 
 
 * {
@@ -76,7 +78,7 @@ html
 {
 	.information-layout main
 	{
-		grid-template-columns: 216px minmax(640px, 1fr);
+		grid-template-columns: 216px minmax(616px, 1fr);
 		gap: 106px;
 		margin-top: 96px;
 	}
