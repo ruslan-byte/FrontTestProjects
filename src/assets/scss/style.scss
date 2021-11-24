@@ -66,6 +66,8 @@ html
 	margin-bottom: 128px;
 	margin-top: 32px;
 }
+.information-layout .g-table{margin-bottom: 32px;}
+.information-layout .g-table__title:not(:first-child) .g-table__item{padding-top: 32px;}
 .information-layout .header
 {
 	background: white;
