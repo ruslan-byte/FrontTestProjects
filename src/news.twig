@@ -1,0 +1,18 @@
+{% extends "layouts/news-layout.twig" %}
+{% block page %}
+	<div class="news">
+		<h3 class="news__title">Новости</h3>
+		<div class="news__list">
+		 	{% for i in 1..4 %}
+				<a href="#" class="news__post g-news-card g-cards-list__card">
+					<h5>Общедомовые нужды</h5>
+					<p class="g-news-card__subtitle">
+						В связи с острой актуальностью и широким освещением в средствах массовой информации недовольства плательщиков по вопросу начисления...
+					</p>
+					<p class="g-news-card__date">14.01.2013</p>
+				</a>
+			{% endfor %}
+		</div>
+		<button class="news__button g-button g-button--small g-button--white">Загрузить больше</button>
+	</div>
+{% endblock %}

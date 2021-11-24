@@ -1,10 +1,12 @@
 .g-news-card
 {
+	display: block;
 	border: 1px solid #EAEAEA;
 	border-radius: 8px;
 	padding: 24px;
 	padding-right: 15px;
 	padding-bottom: 22px;
+	h5{color: #222;}
 	.g-news-card__subtitle
 	{
 		display: -webkit-box;
