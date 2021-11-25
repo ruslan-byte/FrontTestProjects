@@ -1,7 +1,4 @@
-.g-table
-{
-	width: 100%;
-}
+.g-table{width: 100%;}
 .g-table__title{font-weight: 600;}
 .g-table__row
 {
@@ -10,14 +7,16 @@
 	{
 		min-height: 50px;
 		padding: 15px 0;
+		padding-bottom: 16px;
 	}
 	.g-table__item:first-child{width: 58%;padding-right: 20px;}
 	.g-table__item:last-child{width: 42%;}
 }
 @media (min-width: $tablet)
 {
-	.g-table__row .g-table__item:first-child{width: 65%;padding-right: 110px;}
+	.g-table__row .g-table__item:first-child{width: 64%;padding-right: 110px;}
 	.g-table__row .g-table__item:last-child{width: 35%;}
+	.g-table__row .g-table__item{padding-bottom: 14px;}
 }
 @media (min-width: $widescreen)
 {

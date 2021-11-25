@@ -66,7 +66,7 @@ html
 .news-layout main
 {
 	display: grid;
-	margin-bottom: 128px;
+	margin-bottom: 96px;
 	margin-top: 32px;
 }
 .information-layout .g-table{margin-bottom: 32px;}
@@ -94,6 +94,7 @@ html
 		grid-template-columns: 216px minmax(616px, 1fr);
 		gap: 106px;
 		margin-top: 96px;
+		margin-bottom: 166px;
 	}
 	.information-layout main .container{padding-left: 0;}
 	.news-layout main .container{padding-left: 0;}
