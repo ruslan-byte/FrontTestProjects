@@ -1,8 +1,9 @@
 .object
 {
-	margin-top: 64px;
+	margin-top: 63px;
 	margin-bottom: 96px;
 }
+.object__title{margin: 0;}
 .object__search .search{margin-bottom: 24px;}
 .object__list
 {
@@ -22,7 +23,7 @@
 {
 	.object__list
 	{
-		gap:24px;
+		gap: 24px;
 		grid-template-columns: repeat(2, minmax(344px, 1fr));
 	}
 	.object__search .search,
@@ -30,19 +31,20 @@
 }
 @media (min-width: $desktop)
 {
-	.object{margin-top: 96px;}
+	.object{margin-top: 94px;}
 	.object__search .search{margin-bottom: 48px;}
 	.object__list{grid-template-columns: repeat(3, minmax(296px, 1fr));}
 	.object__header .g-select{display: block;}
+	.object__list{gap: 48px 24px;}
 
 }
 @media (min-width: $widescreen)
 {
-	.object{margin-top: 48px;}
+	.object{margin-top: 46px;}
 	.object__search .search{margin-bottom: 64px;}
 	.object__list
 	{
-		gap:48px 31px;
+		gap: 51px 31px;
 		margin-bottom: 124px;
 	}
 }

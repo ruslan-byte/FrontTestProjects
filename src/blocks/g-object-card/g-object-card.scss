@@ -9,6 +9,8 @@
 	transition: filter .3s ease;
 	margin-bottom: 5px;
 	width: 100%;
+	aspect-ratio: 1.53 / 1;
+	object-fit: cover;
 	&:hover { filter: brightness(85%); }
 
 }
@@ -25,4 +27,17 @@
 .g-object-card__type > span{display: inline-block; margin-right: 4px;}
 @media (min-width: $tablet) {
 	.g-object-card{ padding-bottom: 0; }
+	.g-object-card__image
+	{
+		aspect-ratio: 1.56/1;
+		margin-bottom: 8px;
+	}
+}
+@media (min-width: $widescreen)
+{
+	.g-object-card__image
+	{
+		aspect-ratio: 1.58/1;
+		margin-bottom: 8px;
+	}
 }
