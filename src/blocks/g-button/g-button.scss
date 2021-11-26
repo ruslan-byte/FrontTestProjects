@@ -8,6 +8,11 @@
 	padding-right: 23px;
 	padding-left: 23px;
 
+	font-weight: 500;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+
 	border-radius: 4px;
 	cursor: pointer;
 	&--white

@@ -13,7 +13,10 @@
 	a
 	{
 		color: #4D4D4D;
-		font-weight: 300;
+		font-weight: 400;
+		font-smoothing: grayscale;
+		-webkit-font-smoothing: grayscale;
+		-moz-osx-font-smoothing: grayscale;
 		&:hover{color:#969BA5;}
 	}
 }
@@ -21,6 +24,10 @@
 {
 	font-size: 24px;
 	line-height: 32px;
+	font-weight: 400;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
 	letter-spacing: .7px;
 	color:#4D4D4D;
 	&:hover{color:#969BA5;}
@@ -45,7 +52,10 @@
 		display: inline-block;
 		color:#808080;
 		font-size: 14px;
-		font-weight: 300;
+		font-weight: 400;
+		font-smoothing: grayscale;
+		-webkit-font-smoothing: grayscale;
+		-moz-osx-font-smoothing: grayscale;
 		white-space: auto;
 		vertical-align: top;
 		max-width: 115px;
@@ -66,6 +76,8 @@
 	{
 		display: inline-block;
 		margin-bottom: 16px;
+		font-weight: 400;
+		color:#4D4D4D;
 		font-smoothing: grayscale;
 		-webkit-font-smoothing: grayscale;
 		-moz-osx-font-smoothing: grayscale;
@@ -95,7 +107,6 @@
 		{
 			white-space: nowrap;
 			font-size: 14px;
-			font-weight: 300;
 			margin-bottom: 14px;
 		}
 	}
