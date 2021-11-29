@@ -1,4 +1,4 @@
-.g-news-card
+.g-card
 {
 	display: block;
 	border: 1px solid #EAEAEA;
@@ -7,7 +7,7 @@
 	padding-right: 15px;
 	padding-bottom: 22px;
 	h5{color: #222;}
-	.g-news-card__subtitle
+	.g-card__subtitle
 	{
 		display: -webkit-box;
 		margin-bottom: 24px;
@@ -20,7 +20,7 @@
 		font-size: 15px;
 		line-height: 20px;
 	}
-	.g-news-card__date
+	.g-card__date
 	{
 		font-size: 14px;
 		font-style: normal;
