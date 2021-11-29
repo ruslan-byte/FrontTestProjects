@@ -1,0 +1,35 @@
+.docs-detail__link
+{
+	color: #70CE98;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-decoration: underline;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	&:hover{text-decoration: none; }
+}
+.docs-detail p {margin-bottom: 32px;}
+.docs-detail .bread-crumb{ display: none; }
+@media (min-width: $tablet)
+{
+	.docs-detail h4
+	{
+		font-weight: 500;
+		margin-bottom: 32px;
+	}
+}
+@media (min-width: $desktop)
+{
+	.docs-detail .bread-crumb{ display: block; margin-bottom: 4px; }
+}
+@media (min-width: $widescreen)
+{
+	.docs-detail .bread-crumb{ margin-bottom: 16px; }
+	.docs-detail h4
+	{
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
