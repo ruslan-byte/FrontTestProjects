@@ -1,0 +1,14 @@
+.files__title{ margin-bottom: 32px; };
+.files__list .g-card{margin-bottom: 16px;}
+@media (min-width: $tablet)
+{
+	.files__title{font-weight: 500;}
+	.files__list .g-card{margin-bottom: 8px;}
+}
+@media (min-width: $widescreen) {
+	.files__title
+	{
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
