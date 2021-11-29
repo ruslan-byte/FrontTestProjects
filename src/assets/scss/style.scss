@@ -80,6 +80,11 @@ html
 }
 .information-layout__page-select--desktop{display: none;}
 .news-layout__page-select--desktop{display: none;}
+body
+{
+	min-height: 100vh;
+	min-width: 375px;
+}
 @media(min-width: $tablet)
 {
 	.information-layout main{margin-top: 64px;}

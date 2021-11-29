@@ -32,9 +32,10 @@
 	content:'';
 	display: block;
 	background: url('/svg/check.svg') bottom center;
+	background-size:100%;
 	position: absolute;
 	left: 0;
-	width: 32px;
+	width: 31px;
 	height: 32px;
 }
 .enter-banner__form{display: none;}
