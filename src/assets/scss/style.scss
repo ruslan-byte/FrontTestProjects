@@ -19,6 +19,7 @@
 @import 'blocks/g-form/g-form';
 @import 'blocks/g-select/g-select';
 @import 'blocks/g-table/g-table';
+@import 'blocks/g-list/g-list';
 @import 'blocks/search/search';
 @import 'blocks/header/header';
 @import 'blocks/footer/footer';
@@ -31,6 +32,9 @@
 @import 'blocks/feedback-popup/feedback-popup';
 @import 'blocks/page-select/page-select';
 @import 'blocks/bread-crumb/bread-crumb';
+@import 'blocks/services-title/services-title';
+@import 'blocks/banners/banners';
+@import 'blocks/opportunities/opportunities';
 /* Пример подключения*/
 /* @import 'blocks/component/component'; */
 /* pages */
@@ -45,6 +49,7 @@
 @import 'pages/docs-detail/docs-detail.scss';
 @import 'pages/files/files.scss';
 @import 'pages/contacts/contacts.scss';
+@import 'pages/services/services.scss';
 
 
 

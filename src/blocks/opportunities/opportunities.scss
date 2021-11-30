@@ -1,0 +1,122 @@
+.opportunities
+{
+	margin-bottom: 64px;
+	p{margin-bottom: 32px;}
+}
+.opportunities__banner
+{
+	background: #F2F4F7;
+	border-radius: 8px;
+	padding: 66px 16px 32px 16px;
+	.g-list{margin:0;}
+	li{margin-bottom: 32px;}
+	li:last-of-type{margin: 0;}
+	svg
+	{
+		display: block;
+		fill:#70CE98;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		width: 100%;
+		max-width: 229px;
+		path{width: 100%;}
+	}
+}
+@media (min-width: $tablet)
+{
+	.opportunities{margin-bottom: 96px;}
+	.opportunities__banner
+	{
+		padding: 111px 68px 64px 68px;
+		padding-top: 111px;
+		svg
+		{
+			max-width: 322px;
+			margin-bottom: 79px;
+		}
+		li
+		{
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
+	.opportunities__header
+	{
+		h3
+		{
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 32px;
+			margin-bottom: 16px;
+		}
+		p
+		{
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 32px;
+		}
+	}
+}
+@media (min-width: $desktop)
+{
+	.opportunities__header
+	{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 68px;
+		h3
+		{
+			font-size: 24px;
+			line-height: 32px;
+
+		}
+		p
+		{
+			margin: 0;
+			font-size: 16px;
+			line-height: 24px;
+			max-width: 456px
+		}
+	}
+	.opportunities__banner
+	{
+		display: flex;
+		justify-content: space-between;
+		padding:94px 56px 94px 86px;
+		li
+		{
+			font-size: 16px;
+			line-height: 24px;
+		}
+		svg
+		{
+			margin: 0;
+			max-width: 282px;
+		}
+		.g-list{max-width:400px}
+	}
+}
+@media (min-width: $widescreen) {
+	.opportunities{margin-bottom: 128px;}
+	.opportunities__header
+	{
+		h3{font-size: 32px;}
+		p
+		{
+			font-size: 24px;
+			line-height: 32px;
+			max-width: 544px;
+		}
+		margin-bottom: 48px;
+	}
+	.opportunities__banner
+	{
+		padding: 84px 87px 78px 135px;
+		.g-list{padding-top: 10px;}
+		svg
+		{
+			margin: 0;
+			max-width: 368px;
+		}
+	}
+}

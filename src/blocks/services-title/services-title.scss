@@ -1,0 +1,33 @@
+.services-title
+{
+	margin-bottom: 64px;
+	.services-title__title{margin-bottom: 32px;}
+	.services-title__subtitle
+	{
+		margin-bottom: 28px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
+@media (min-width: $tablet)
+{
+	.services-title	.services-title__subtitle
+	{
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 32px;
+		margin-bottom: 32px;
+
+	}
+}
+@media (min-width: $desktop) {
+	.services-title{max-width: 832px}
+}
+@media (min-width: $widescreen)
+{
+	.services-title
+	{
+		max-width: 928px;
+		margin-bottom: 96px;
+	}
+}

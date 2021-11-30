@@ -1,0 +1,35 @@
+.g-list
+{
+	position: relative;
+	padding-left: 45px;
+}
+.g-list li
+{
+	margin-bottom: 24px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+}
+.g-list li::before
+{
+	content:'';
+	display: block;
+	background: url('/svg/check.svg') bottom center;
+	background-size:100%;
+	position: absolute;
+	left: 0;
+	width: 31px;
+	height: 32px;
+}
+@media (min-width: $tablet)
+{
+	.g-list li{margin-bottom: 32px;}
+	.g-list{margin-bottom: 64px;}
+}
+@media (min-width: $desktop)
+{
+	.g-list{padding-left: 48px;}
+}
