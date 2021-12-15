@@ -21,6 +21,11 @@
 		font-smoothing: grayscale;
 		-webkit-font-smoothing: grayscale;
 		-moz-osx-font-smoothing: grayscale;
+		&:hover
+		{
+			stroke: #8c8c8c;
+			color: #8c8c8c;
+		}
 		svg
 		{
 			margin-right: 3px;
@@ -43,6 +48,13 @@
 		line-height: 36px;
 		color:#4D4D4D;
 		stroke:#4D4D4D;
+		&:hover
+		{
+			border: 1px solid #808080;
+			color:#4D4D4D;
+			stroke:#4D4D4D;
+		}
+		&:active{border: 1px solid #222222}
 		svg{height: 10px;}
 	}
 }
