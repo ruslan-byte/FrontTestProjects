@@ -12,6 +12,7 @@
 	font-smoothing: grayscale;
 	-webkit-font-smoothing: grayscale;
 	-moz-osx-font-smoothing: grayscale;
+	&:last-child{margin: 0;}
 }
 .g-list li::before
 {
@@ -26,7 +27,11 @@
 }
 @media (min-width: $tablet)
 {
-	.g-list li{margin-bottom: 32px;}
+	.g-list li
+	{
+		margin-bottom: 32px;
+		&:last-child{margin: 0;}
+	}
 	.g-list{margin-bottom: 64px;}
 }
 @media (min-width: $desktop)

@@ -17,6 +17,7 @@
 	border-radius: 4px;
 	padding: 24px 12px 24px 8px;
 	outline-offset: 0px;
+	&--active,
 	&:focus
 	{
 		border: 2px solid #DCDCE6;
@@ -42,7 +43,7 @@
 	pointer-events: none;
 	transition: all .3s;
 	.g-input__input:focus + &,
-	.g-input__input--active + &,
+	.g-input__input--active + &
 	{
 		font-size: 12px;
 		line-height: 16px;

@@ -60,7 +60,9 @@
 			padding-top: 22px;
 			padding-bottom: 22px;
 		}
-		.g-input__placeholder{top: 16px;}
+		.g-input__placeholder{ top: 16px; }
+		.g-input__input:focus + .g-input__placeholder{ top: 3px; }
+		.g-input__input--active + .g-input__placeholder{ top: 3px; }
 	}
 	.enter-banner__button{margin-bottom: 16px}
 	.enter-banner__link
