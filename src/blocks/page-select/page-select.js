@@ -20,5 +20,10 @@ o2.pageSelect =
 			this.isOpen = false;
 		}
 	},
+	showOrHidePageSublist(pageItem)
+	{
+		$(pageItem).toggleClass("page-select__item-title--active");
+		$(pageItem).parent().find('._page-sublist').toggleClass('page-select__sublist--active');
+	},
 
 };

@@ -57,13 +57,24 @@
 		margin-bottom: 16px;
 	}
 }
+.page-select__item-title{border:none;}
+.page-select__item-title,
 .page-select__link
 {
 	color: #969BA5;
+	&--active,
 	&:hover{color: #222222}
+
 }
-.page-select__link--active{color: #222222}
-.page-select__sublist{padding: 16px 0 0 32px;}
+.page-select__sublist
+{
+	padding: 16px 0 0 32px;
+	display: none;
+	&--active
+	{
+		display: block;
+	}
+}
 @media(min-width: $tablet)
 {
 	.page-select__button{padding:0 28px;}
