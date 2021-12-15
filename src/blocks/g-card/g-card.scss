@@ -4,9 +4,9 @@
 	border: 1px solid #DCDCE6;
 	border-radius: 8px;
 	padding: 24px;
-	padding-right: 15px;
-	padding-bottom: 22px;
 	h5{color: #222;}
+	&:hover{border: 1px solid #808080}
+	&:active{border: 1px solid #222222}
 	.g-card__subtitle
 	{
 		display: -webkit-box;
