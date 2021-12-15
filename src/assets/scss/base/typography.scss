@@ -37,8 +37,10 @@ h1
 	margin-bottom: 10px;
 	font-size: 38px;
 	line-height: 42px;
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: .3px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 h2
 {
