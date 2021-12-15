@@ -20,11 +20,46 @@
 <body class="about-us-layout">
 	{% include "blocks/header/header.twig" %}
 	<div class="about-us-layout__page-select about-us-layout__page-select--mobile">
-		{% include "blocks/page-select/page-select.twig" %}
+		<div class="g-page-select _g-page-select">
+			<button class="g-page-select__button" onclick="o2.pageSelect.open()">
+				Общая информация
+				<div class="g-page-select__icon">
+					{% include "assets/svg/arrow-down.svg" %}
+				</div>
+			</button>
+			<ul class="g-page-select__list _g-page-select__list">
+				<li class="g-page-select__item _g-page-select-item">
+					<a class="g-page-select__link g-page-select__link--active" href="#">
+						Об УК «Управление паркингами»
+					</a>
+				</li>
+				<li class="g-page-select__item _g-page-select-item">
+					<a class="g-page-select__link" href="#">
+						Документы
+					</a>
+				</li>
+			</ul>
+			<div class="g-page-select__background"></div>
+		</div>
 	</div>
 	<main class="container">
 		<div class="about-us-layout__page-select about-us-layout__page-select--desktop">
-			{% include "blocks/page-select/page-select.twig" %}
+			<div class="g-page-select _g-page-select">
+				<ul class="g-page-select__list _g-page-select__list">
+					<ul class="g-page-select__list _g-page-select__list">
+						<li class="g-page-select__item _g-page-select-item">
+							<a class="g-page-select__link g-page-select__link--active" href="#">
+								Об УК «Управление паркингами»
+							</a>
+						</li>
+						<li class="g-page-select__item _g-page-select-item">
+							<a class="g-page-select__link" href="#">
+								Документы
+							</a>
+						</li>
+					</ul>
+				</ul>
+			</div>
 		</div>
 		<div>
 			{% block page %}

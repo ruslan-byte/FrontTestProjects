@@ -1,4 +1,4 @@
-.page-select
+.g-page-select
 {
 	min-width: 375px;
 	font-size: 14px;
@@ -8,7 +8,7 @@
 	-webkit-font-smoothing: grayscale;
 	-moz-osx-font-smoothing: grayscale;
 }
-.page-select__button
+.g-page-select__button
 {
 	padding:0 16px;
 	background:white;
@@ -20,13 +20,13 @@
 	vertical-align: middle;
 	position:relative;
 	z-index: 10;
-	.page-select__icon
+	.g-page-select__icon
 	{
 		transition: transform .3s ease;
 		float: right;
 	}
 }
-.page-select--open
+.g-page-select--open
 {
 	position: absolute;
 	height: 100%;
@@ -34,9 +34,9 @@
 	z-index: 1;
 	vertical-align: middle;
 
-	.page-select__list{display: block;}
-	.page-select__icon{transform: rotate(180deg);}
-	.page-select__background
+	.g-page-select__list{display: block;}
+	.g-page-select__icon{transform: rotate(180deg);}
+	.g-page-select__background
 	{
 		position: fixed;
 		background: rgba(15, 25, 50, 0.5);
@@ -46,7 +46,7 @@
 		z-index: -1;
 	}
 }
-.page-select__list
+.g-page-select__list
 {
 	display: none;
 	padding: 16px 16px 188px 16px;
@@ -55,18 +55,19 @@
 	{
 		line-height: 24px;
 		margin-bottom: 16px;
+		&:last-child{ margin: 0;}
 	}
 }
-.page-select__item-title{border:none;}
-.page-select__item-title,
-.page-select__link
+.g-page-select__item-title{border:none;}
+.g-page-select__item-title,
+.g-page-select__link
 {
 	color: #969BA5;
 	&--active,
 	&:hover{color: #222222}
 
 }
-.page-select__sublist
+.g-page-select__sublist
 {
 	padding: 16px 0 0 32px;
 	display: none;
@@ -77,35 +78,35 @@
 }
 @media(min-width: $tablet)
 {
-	.page-select__button{padding:0 28px;}
-	.page-select__list
+	.g-page-select__button{padding:0 28px;}
+	.g-page-select__list
 	{
 		padding-top: 32px;
 		padding-left: 28px;
 		padding-bottom: 172px;
 		font-size:18px;
 	}
-	.page-select__sublist{padding-left: 65px;}
+	.g-page-select__sublist{padding-left: 65px;}
 }
 @media(min-width: $desktop)
 {
-	.page-select__button{display: none;}
-	.page-select__list
+	.g-page-select__button{display: none;}
+	.g-page-select__list
 	{
 		display: block;
 		padding: 0;
 		font-size: unset;
 	}
-	.page-select__sublist{padding-left: 17px;}
-	.page-select
+	.g-page-select__sublist{padding-left: 17px;}
+	.g-page-select
 	{
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 24px;
 	}
-	.page-select__background{display: none;}
+	.g-page-select__background{display: none;}
 }
 @media(min-width: $widescreen)
 {
-	.page-select__sublist{padding-left: 32px;}
+	.g-page-select__sublist{padding-left: 32px;}
 }
