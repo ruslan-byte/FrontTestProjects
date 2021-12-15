@@ -13,7 +13,11 @@
 }
 .g-cards-list__button--mobile{width: 100%;}
 .g-cards-list__button--desktop{display: none;}
-.g-cards-list__header{margin-bottom: 16px;}
+.g-cards-list__header
+{
+	margin-bottom: 16px;
+	h4{ margin: 0; }
+}
 
 @media (min-width: $tablet)
 {
