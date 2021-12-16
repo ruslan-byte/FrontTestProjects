@@ -18,6 +18,7 @@ o2.gPopup =
 				self.close();
 			});
 		},10);
+		o2.innputMask.init();
 	},
 	close()
 	{

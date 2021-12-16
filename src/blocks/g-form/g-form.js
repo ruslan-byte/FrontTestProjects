@@ -1,4 +1,4 @@
-o2.loginPopupForm =
+o2.gFrom =
 {
 	submit(instance)
 	{

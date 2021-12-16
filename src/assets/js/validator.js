@@ -70,7 +70,7 @@ class O2Validator
 		phone($field)
 		{
 			let $input = $field.find('input');
-			const regex = /^((\+7|7|8)+\([0-9]{3}\)[0-9]{3}\-[0-9]{2}\-[0-9]{2})$/;
+			const regex = /^((\+7|7|8)+\ [0-9]{3}\ [0-9]{3}\ [0-9]{2}\ [0-9]{2})$/;
 			if(regex.test($input.val()))
 				return true;
 			O2Validator.setMessage($field,'Телефон введен не корректно');

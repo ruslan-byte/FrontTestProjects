@@ -517,7 +517,7 @@
 								</svg>
 							</div>
 						</div>
-						<form class="login-popup g-form g-popup__container" onsubmit="return o2.loginPopupForm.submit(this)">
+						<form class="login-popup g-form g-popup__container" onsubmit="return o2.gFrom.submit(this)">
 							<h2>Войти в личный кабинет</h2>
 							<label class="g-input _field" data-code="email" data-call="email">
 								<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
@@ -552,30 +552,30 @@
 								</svg>
 							</div>
 						</div>
-						<form class="feedback-popup g-form g-popup__container">
+						<form class="feedback-popup g-form g-popup__container" onsubmit="return o2.gFrom.submit(this)">
 							<h2>Свяжитесь с нами</h2>
 							<p>Если у вас вопросы, жалобы или предложения, воспользуйтесь формой обратной связи.</p>
-							<label class="g-input">
-								<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+							<label class="g-input _field" data-call="empty">
+								<input class="g-input__input feedback-popup__input feedback-popup__input--white" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
 								<span class="g-input__placeholder">Сообщение</span>
-								<div class="g-input__sub">Name already exist</div>
+								<div class="g-input__sub _error-msg">Name already exist</div>
 							</label>
 							<div class="g-form__row">
-								<label class="g-input">
+								<label class="g-input _field" data-call="empty">
 									<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
 									<span class="g-input__placeholder">Имя</span>
-									<div class="g-input__sub">Name already exist</div>
+									<div class="g-input__sub _error-msg">Name already exist</div>
 								</label>
-								<label class="g-input">
-									<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
+								<label class="g-input _field" data-call="phone">
+									<input class="g-input__input _phone-mask" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
 									<span class="g-input__placeholder">Телефон</span>
-									<div class="g-input__sub">Name already exist</div>
+									<div class="g-input__sub _error-msg">Name already exist</div>
 								</label>
 							</div>
-							<label class="g-input feedback-popup__last-input">
+							<label class="g-input feedback-popup__last-input _field" data-call="email">
 								<input class="g-input__input" type="text" onfocus="o2.gInput.onChange(this)" onblur="o2.gInput.onChange(this)">
 								<span class="g-input__placeholder">Эл. почта</span>
-								<div class="g-input__sub">Name already exist</div>
+								<div class="g-input__sub _error-msg">Name already exist</div>
 							</label>
 							<button class="g-form__submit g-button g-button--black">Отправить</button>
 

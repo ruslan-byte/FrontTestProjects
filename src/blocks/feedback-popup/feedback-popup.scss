@@ -1,5 +1,10 @@
 .feedback-popup h2{margin-bottom: 16px;}
 .feedback-popup p{margin-bottom: 32px;}
+.feedback-popup__input--white
+{
+	border: 2px solid #DCDCE6;
+	background: white;
+}
 @media (min-width: $mobile) {
 	.feedback-popup .feedback-popup__last-input{margin-bottom: 32px;}
 }

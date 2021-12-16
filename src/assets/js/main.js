@@ -18,6 +18,7 @@ const o2 =
 	init()
 	{
 		o2.gInput.init();
+		o2.innputMask.init();
 	},
 	/**
 	* отслеживание клика вне блока
