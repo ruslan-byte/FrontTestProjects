@@ -6,7 +6,13 @@
 }
 .enter-banner__content
 {
-	background: #F8F9FB;
+	background: #EAEAEA;
+	.enter-banner__button
+	{
+		background: #969BA5;
+		&:hover{background: #525761;}
+		&:active{background: #3A3D44;}
+	}
 	padding: 32px 16px;
 	border-radius: 8px;
 	max-width: 576px;
@@ -21,7 +27,17 @@
 @media (min-width: $tablet)
 {
 	.enter-banner { margin-bottom: 64px; }
-	.enter-banner__content{padding: 64px 24px;}
+	.enter-banner__content
+	{
+		background: #F8F9FB;
+		padding: 64px 24px;
+		.enter-banner__button
+		{
+		 	background: #525761;
+		 	&:hover{background: #3A3D44;}
+			&:active{background: #292B30}
+		}
+	}
 }
 @media (min-width: $desktop) {
 	.enter-banner__list{margin-bottom: 0;}

@@ -49,7 +49,12 @@
 	top: 17px;
 	right: 17px;
 	cursor: pointer;
-	path{stroke: #969BA5}
+	&:hover path{ stroke: #606060; }
+	&:active path{ stroke: #171717; }
+	path
+	{
+		stroke: #969BA5;
+	}
 }
 .g-popup__header
 {
