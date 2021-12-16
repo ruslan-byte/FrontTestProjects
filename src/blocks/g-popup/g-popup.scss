@@ -5,14 +5,12 @@
 .g-popup
 {
 	position: fixed;
+	display: block;
 	top:0px;
 	left:0px;
 	height: 100%;
-	width:100%;
+	width: 100%;
 	background: rgba(124, 119, 145, 0.1);;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	overflow: auto;
 	visibility: hidden;
 	opacity:0;
@@ -25,6 +23,7 @@
 .g-popup__content
 {
 	width: 100%;
+	min-width: 375px;
 	background: #fff;
 	height: 100%;
 	margin: 0 auto;
