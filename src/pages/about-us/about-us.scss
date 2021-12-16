@@ -3,6 +3,7 @@
 {
 	margin-bottom: 24px;
 	&--last{margin-bottom: 32px;}
+	&:last-child{margin-bottom: 0;}
 }
 @media(min-width: $tablet)
 {

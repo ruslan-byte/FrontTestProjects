@@ -1,5 +1,9 @@
 .files__title{ margin-bottom: 32px; };
-.files__list .g-card{margin-bottom: 16px;}
+.files__list .g-card
+{
+	margin-bottom: 16px;
+	&:last-child { margin: 0;}
+}
 @media (min-width: $tablet)
 {
 	.files__title{font-weight: 500;}

@@ -33,9 +33,27 @@
 {
 	.object{margin-top: 94px;}
 	.object__search .search{margin-bottom: 48px;}
-	.object__list{grid-template-columns: repeat(3, minmax(296px, 1fr));}
-	.object__header .g-select{display: block;}
-	.object__list{gap: 48px 24px;}
+	.object__list
+	{
+		grid-template-columns: repeat(3, minmax(296px, 1fr));
+		gap: 48px 24px;
+	}
+	.object__header .g-select
+	{
+		display: block;
+		.g-select__list
+		{
+			left: unset;
+			right: 0;
+			min-width: 180px;
+			border:1px solid #DCDCE6;
+		}
+		.g-select__item
+		{
+			border-bottom:1px solid #DCDCE6;
+			&:last-child{border: none;}
+		}
+	}
 
 }
 @media (min-width: $widescreen)

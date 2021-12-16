@@ -126,6 +126,7 @@ body
 	.about-us-layout__page-select--mobile,
 	.information-layout__page-select--mobile,
 	.news-layout__page-select--mobile{display: none;}
+	.news-layout main{margin-bottom: 296px;}
 }
 @media(min-width: $widescreen)
 {
