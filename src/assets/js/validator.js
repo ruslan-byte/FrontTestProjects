@@ -39,7 +39,7 @@ class O2Validator
 		let $field = $(inputInstance).parent('._field');
 		$field.removeClass('error');
 
-		let callbacks = O2Validator.parseCalls($field)
+		let callbacks = O2Validator.parseCalls($field);
 		if(!callbacks) return true;
 
 		for (let callback of callbacks)
@@ -50,7 +50,7 @@ class O2Validator
 				return false;
 			}
 		}
-		return true
+		return true;
 
 	}
 
@@ -58,7 +58,7 @@ class O2Validator
 	{
 		const callbacks = $field.data('call');
 
-		return callbacks && callbacks.replace(/ +/g,' ').trim().split(' ')
+		return callbacks && callbacks.replace(/ +/g,' ').trim().split(' ');
 	}
 
 
@@ -105,18 +105,18 @@ class O2Validator
 			$input.each(function()
 			{
 				if($(this).prop('checked'))
-					checker = true
-			})
+					checker = true;
+			});
 			if(checker)
-				return true
+				return true;
 			O2Validator.setMessage($field,'Ничего не выбрано');
-			return false
+			return false;
 		},
 		email($field)
 		{
 			let $input = $field.find('input');
 			const regex = /\S+@\S+\.\S+/;
-			if(regex.test($input.val())) return true
+			if(regex.test($input.val())) return true;
 
 			O2Validator.setMessage($field,'Адрес почты введен не корректно');
 			return false;
@@ -125,7 +125,7 @@ class O2Validator
 
 	showGlobalErrors()
 	{
-		let errorsHtml = this.errors.join('</li><li>')
+		let errorsHtml = this.errors.join('</li><li>');
 		let $errorsBlock = $(this.formInstance).find('._global-errors');
 		$errorsBlock.html(`<ul><li>${errorsHtml}</li></ul>`);
 
@@ -147,6 +147,6 @@ class O2Validator
 
 	static setMessage($field, msg)
 	{
-		$field.find('._error-msg').html(msg)
+		$field.find('._error-msg').html(msg);
 	}
 }

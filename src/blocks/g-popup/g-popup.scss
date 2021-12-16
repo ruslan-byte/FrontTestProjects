@@ -7,7 +7,7 @@
 	position: fixed;
 	top:0px;
 	left:0px;
-	min-height: 100vh;
+	height: 100%;
 	width:100%;
 	background: rgba(124, 119, 145, 0.1);;
 	display: flex;
@@ -33,7 +33,7 @@
 	box-shadow: 0 4px 10px rgba(0,0,0,.08);
 	overflow: auto;
 	position: relative;
-
+	max-height: 100vh;
 }
 .g-popup__container
 {
