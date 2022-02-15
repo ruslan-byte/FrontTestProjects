@@ -8,6 +8,7 @@ o2.gPopup =
 		$('._overlay').addClass('open').html(popupHtml);
 		this.scrollTop();
 		$('body').css({overflow:'hidden'});
+		$('html').css({'padding-right': '17px'});
 		this.setEscEvent();
 		let $popup = $('._overlay').find('._popup-content');
 		let self = this;
@@ -24,6 +25,7 @@ o2.gPopup =
 	{
 		$('._overlay').removeClass('open');
 		$('body').css({overflow:'auto'});
+		$('html').css({'padding-right': '0'});
 		this.removeListner();
 	},
 	removeListner()
